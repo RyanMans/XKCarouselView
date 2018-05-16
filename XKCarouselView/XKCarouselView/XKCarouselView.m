@@ -102,7 +102,6 @@ static NSString * imageCache;
             //如果是网络图片，则先添加占位图片，下载完成后替换
             if (_placeholderImage) [_imagesDataSource addObject:_placeholderImage];
             else [_imagesDataSource addObject:[UIImage imageNamed:@"XKPlaceholder"]];
-
             [self xk_DownloadImageAtIndex:index];
         }
     }
